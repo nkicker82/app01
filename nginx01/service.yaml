@@ -3,3 +3,9 @@ kind: Service
 metadata:
   name: nginx01-svc
 spec:
+  selector:
+    app.kubernetes.io/name: nginx
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: http
