@@ -4,6 +4,7 @@ metadata:
   name: nginx
   labels: 
     app.kubernetes.io/name: nginx
+  namespace: argocd-test
 spec:
   containers:
   - name: nginx
